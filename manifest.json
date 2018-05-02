@@ -1,0 +1,18 @@
+{
+	"name": "Discogs Listing Page Helper",
+	"description": "Enhances the Discogs Marketplace Listing Page",
+	"version": "1.0",
+
+    "permissions": ["storage"],
+
+	"content_scripts": [
+        {
+            "matches": ["https://www.discogs.com/sell/post/*"],
+            "js": ["jquery-2.2.0.min.js", "inputosaurus.js", "contentScript.js"]
+        }
+    ],
+		
+
+	"manifest_version": 2
+
+}
